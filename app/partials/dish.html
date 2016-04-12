@@ -3,3 +3,31 @@
 
 <!-- TODO in Lab 5: Display the dish information including image, Description, 
 Instructions, Ingredients and total cost. -->
+
+<!-- <input ng-model="query"/> -->
+<!-- <button ng-click="searchDish(query)">Confirm dish</button> -->
+<div class="col-md-9 whiteDiv blackBorder">
+	<div id="dishDetails" class="row">
+		<div id="selectedDishDetails" class="col-md-7">
+			{{status}}
+		 	<img ng-src="{{dish.ImageURL}}" style=\"width:128px;height:128px;\"/>
+		 	<p>{{dish.Title}}
+		 	<p>{{dish.Category}}
+			<p>{{dish.Description}}
+	 		<p>{{dish.Instructions}}
+	 	</div>
+	 	
+	 	<div id="ingredientsBox" class="col-md-5">
+	 		<ul>
+	 			<li ng-repeat="ingr in dish.Ingredients">
+	 			{{ingr.Name}} {{ingr.Quantity}} {{ingr.Unit}}
+	 			</li> 	
+	 			Total price: SEK {{foodPrice}}
+	 		</ul>
+	 		<a href="#/search" class="btn btn-primary" ng-click="add(dish.RecipeID)">Confirm dish</a>
+	 	</div>
+	 	<div class="col-md-12">
+	 		<a href="#/search" class="btn btn-primary">Back to select dish</a>
+	 	</div>
+	</div>
+</div>

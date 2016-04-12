@@ -1,0 +1,26 @@
+<div class="row whiteDiv blackBorder">
+	<div id="instructions">
+		<div class="col-md-12">
+			My dinner: {{numberOfGuests}} people		
+			<a href="#/search" class="btn btn-primary">Go back and edit dinner</a>
+		</div>
+	</div>
+
+		<div class="col-md-12 center">
+			<ul>
+				<li ng-repeat="dish in menu">
+					<img ng-src="{{dish.ImageURL}}" style=\"width:128px;height:128px;\"/>
+					<p>{{dish.Title}} 
+					<p>SEK {{getPrice(dish.RecipeID)}}
+				</li>
+			</ul>
+		</div>
+			<div class="col-md-12 center">
+				Total price: SEK {{totalMenuPrice()}}
+			</div>
+			<div class="col-md-12 center">
+				<a href="#/preparation" class="btn btn-primary">Print Full Recipe</a>
+			</div>
+		
+	
+</div>

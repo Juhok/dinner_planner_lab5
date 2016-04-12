@@ -1,0 +1,147 @@
+body {
+    margin: auto;
+    width: 960px;
+}
+
+body.home{
+	background-image: url("../images/background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.secondHeader{
+	background-color: rgba(12, 12, 13, 0.3);
+	text-align: left;
+	margin-bottom: 2px;
+	border: 2px solid black;
+	padding-left: 10px;
+}
+
+.firstHeader{
+	background-color: rgba(255, 255, 102, 0.5);
+	text-align: left;
+	margin-bottom: 2px;
+	border: 2px solid black;
+	padding-left: 10px;
+}
+
+#header h5{
+	font-style: italic;
+}
+
+h1{
+	font-style: bold;
+}
+
+.btn{
+	background-color: orange;
+	border: 1px solid black;
+}
+
+#indexBox{
+	background-color: rgba(255, 255, 255, 1);
+	position: relative;
+	left: 0px;
+	width: 500px;
+	padding: 10px;
+	margin-top: 200px;
+
+}
+
+.blackLine{
+	background-color: black;
+	border: 1px solid black;
+	opacity: 0.5;
+}
+
+
+#dishDiv{
+	border: 2px solid black;
+	background-color: rgba(255, 255, 102, 0.5);
+	padding: 10px;
+	margin-bottom: 5px;
+	
+}
+
+#picBox{
+	/*border: 2px solid black;*/
+	background-color: white;
+	margin: 0px;
+	padding: 10px;
+}
+
+.costColor{
+	color: rgb(204, 51, 0);
+}
+
+#costDiv{
+	margin-top: 3px;
+	background-color: lightgrey;
+	height: 20px;
+	display: inline-block;
+}
+
+#ingredientsBox{
+	background-color: rgba(255, 255, 102, 0.5);
+	border: 2px solid black;
+	padding: 10px;
+}
+
+#dinnerOverview{
+	background-color: rgba(255, 255, 102, 0.5);
+	border: 2px solid black;
+	padding: 10px;
+}
+
+img{
+	border: 1px solid black;
+}
+
+#preparationView{
+	padding-top: 10px;
+}
+
+#printButton{
+	margin: 10px;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+.center
+{
+    display:inline-block;
+    text-align: center;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+.whiteDiv{
+	background-color: white;
+}
+
+.blackBorder{
+	border: 2px solid black;
+	padding: 10px;
+}
+
+#dishDetails{
+	padding-right:15px;
+    padding-left:15px;
+}
+
+.imgInstruction{
+	padding: 10px;
+}
+
+#mainView{
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.pendingTxt{
+	color: rgb(204,51,0);
+	font-style: italic;
+}
